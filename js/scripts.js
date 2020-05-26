@@ -17,7 +17,7 @@ function playerTurn() {
 }
 
 function playRound(playerSelection, computerSelection) {
-  console.log(playerPick, computerPick);
+  console.log(`PLAYER: ${playerSelection}, \nCOMPUTER: ${computerSelection}`);
   if (playerSelection === 'rock' && computerSelection === 'paper') {
     computerScore++;
     return console.log(
