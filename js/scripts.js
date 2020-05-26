@@ -60,9 +60,8 @@ function game() {
   for (let i = 0; i < roundNum; i++) {
     playRound(playerTurn(), computerPlay());
   }
-  console.log(
-    `\n*************\nSCORES\n*************\n\nPLAYER: ${playerScore} | COMPUTER: ${computerScore}`
-  );
+  console.log(`\n*************\nSCORES\n*************\n`);
+  console.log(`\nPLAYER: ${playerScore} | COMPUTER: ${computerScore}`);
 
   if (playerScore > computerScore) {
     console.log(`Player Wins! with a score of ${playerScore}`);
